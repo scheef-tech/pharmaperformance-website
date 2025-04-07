@@ -21,6 +21,11 @@
       "pattern": "pharmaperformance.de",
       "custom_domain": true,
       "zone_name": "pharmaperformance.de"
+    },
+    {
+      "pattern": "www.pharmaperformance.de",
+      "custom_domain": true,
+      "zone_name": "pharmaperformance.de"
     }
   ],
   "send_email": [
