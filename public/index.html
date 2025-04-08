@@ -12,7 +12,7 @@
     <link rel="preload" href="/static/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/static/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/static/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.min.css">
     <link rel="stylesheet" href="/static/css/fonts.css">
     <link rel="stylesheet" href="/static/css/fontawesome.css">
     <style>:root{--primary-color:#FFF;--secondary-color:#3498DB;--accent-color:#E74C3C;--text-color:#FFF;--light-bg:#000;--form-bg:#1a1a1a;--button-color:#0b6bae;--button-hover-color:#085590}body{font-family:'Montserrat',sans-serif;background-color:var(--light-bg);color:var(--text-color);margin:0;min-height:100vh;display:flex;flex-direction:column}.header{background-color:rgba(0,0,0,.8);padding:.5rem 1rem;z-index:1000;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.header-logo{width:60px;height:60px;object-fit:cover}.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.main-content{flex:1;max-width:1200px;width:100%;margin-left:auto;margin-right:auto;padding:1rem;box-sizing:border-box}.company-logo,.slider-container{width:100%;margin:0 auto;height:auto}.slider-container{overflow:hidden;position:relative}.slider{display:flex;transition:transform .5s ease-in-out}.slide{display:flex;justify-content:center;align-items:center;flex-shrink:0}.slide img{max-width:100%;height:auto;display:block}.progress-bar{background-color:var(--secondary-color)}.footer{background-color:rgba(0,0,0,.8);padding:1rem;text-align:center}.footer a{color:var(--secondary-color);text-decoration:none;margin:0 .5rem;font-weight:500;display:inline-block;padding:.5rem 0}.footer a:hover{color:var(--secondary-color);font-weight:700}@media (max-width:768px){.header{padding:.5rem 1rem;flex-direction:column;align-items:center}.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.main-content>.max-w-\[800px\]{padding-left:0;max-width:100%}.main-content .text-xl{font-size:1rem;line-height:1.5}.main-content h1.text-xl{font-size:1.1rem}.main-content .mb-12{margin-bottom:2rem}.main-content>div>div[style*="padding-left: 75px"]{padding-left:0!important}.main-content>div>div[style*="background-color: var(--form-bg)"]{padding:1rem!important}#contactForm label,#contactForm input,#contactForm textarea,#contactForm button{font-size:.9rem}#contactForm textarea{rows:8}#contactForm .text-xs{font-size:.7rem}.indented-text-block{padding-left:0!important}}@media (max-width:480px){.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.footer a{margin:0 .3rem;padding:.4rem 0}}@keyframes carousel{0%{transform:translateX(0)}100%{transform:translateX(-0%)}}.indented-text-block{padding-left:5rem}</style>
@@ -20,6 +20,8 @@
     <!-- Cache control for Cloudflare -->
     <link rel="preconnect" href="https://static.cloudflareinsights.com">
     <link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
+    <!-- Add cache headers -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
 </head>
 
 <body>
@@ -36,13 +38,15 @@
     </header>
 
     <!-- Slider moved outside main-content container for full width -->
-    <div class="mb-6"> 
+    <div class="mb-6" style="min-height: 675px;"> <!-- Added fixed height to prevent layout shift -->
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_1.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_1.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_1.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_1.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_1.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_1.jpg" 
                              srcset="/static/images/mobile/website_karussel_1.jpg 400w,
                                      /static/images/tablet/website_karussel_1.jpg 800w,
                                      /static/images/desktop/website_karussel_1.jpg 1200w"
@@ -50,13 +54,16 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 1" class="company-logo"
-                             width="1200" height="675" loading="eager">
+                             width="1200" height="675" loading="eager"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_2.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_2.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_2.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_2.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_2.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_2.jpg" 
                              srcset="/static/images/mobile/website_karussel_2.jpg 400w,
                                      /static/images/tablet/website_karussel_2.jpg 800w,
                                      /static/images/desktop/website_karussel_2.jpg 1200w"
@@ -64,13 +71,16 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 2" class="company-logo"
-                             width="1200" height="675" loading="lazy">
+                             width="1200" height="675" loading="lazy"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_3.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_3.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_3.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_3.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_3.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_3.jpg" 
                              srcset="/static/images/mobile/website_karussel_3.jpg 400w,
                                      /static/images/tablet/website_karussel_3.jpg 800w,
                                      /static/images/desktop/website_karussel_3.jpg 1200w"
@@ -78,13 +88,16 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 3" class="company-logo"
-                             width="1200" height="675" loading="lazy">
+                             width="1200" height="675" loading="lazy"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_4.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_4.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_4.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_4.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_4.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_4.jpg" 
                              srcset="/static/images/mobile/website_karussel_4.jpg 400w,
                                      /static/images/tablet/website_karussel_4.jpg 800w,
                                      /static/images/desktop/website_karussel_4.jpg 1200w"
@@ -92,13 +105,16 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 4" class="company-logo"
-                             width="1200" height="675" loading="lazy">
+                             width="1200" height="675" loading="lazy"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_5.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_5.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_5.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_5.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_5.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_5.jpg" 
                              srcset="/static/images/mobile/website_karussel_5.jpg 400w,
                                      /static/images/tablet/website_karussel_5.jpg 800w,
                                      /static/images/desktop/website_karussel_5.jpg 1200w"
@@ -106,13 +122,16 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 5" class="company-logo"
-                             width="1200" height="675" loading="lazy">
+                             width="1200" height="675" loading="lazy"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
                 <div class="slide">
                     <picture>
-                        <source srcset="/static/images/desktop/webp/website_karussel_6.webp" type="image/webp">
-                        <img src="/static/images/desktop/website_karussel_6.jpg" 
+                        <source srcset="/static/images/desktop/webp/website_karussel_6.webp" type="image/webp" media="(min-width: 801px)">
+                        <source srcset="/static/images/tablet/webp/website_karussel_6.webp" type="image/webp" media="(min-width: 401px) and (max-width: 800px)">
+                        <source srcset="/static/images/mobile/webp/website_karussel_6.webp" type="image/webp" media="(max-width: 400px)">
+                        <img src="/static/images/mobile/website_karussel_6.jpg" 
                              srcset="/static/images/mobile/website_karussel_6.jpg 400w,
                                      /static/images/tablet/website_karussel_6.jpg 800w,
                                      /static/images/desktop/website_karussel_6.jpg 1200w"
@@ -120,7 +139,8 @@
                                     (max-width: 800px) 800px,
                                     1200px"
                              alt="Karussell Bild 6" class="company-logo"
-                             width="1200" height="675" loading="lazy">
+                             width="1200" height="675" loading="lazy"
+                             style="aspect-ratio: 16/9; width: 100%; height: auto;">
                     </picture>
                 </div>
             </div>
@@ -234,16 +254,18 @@
                 scriptUrls.forEach(url => {
                     const script = document.createElement('script');
                     script.src = url;
+                    // Add cache control
+                    script.setAttribute('crossorigin', 'anonymous');
                     document.body.appendChild(script);
                 });
                 
-                // Add Cloudflare script with proper cache control
+                // Add Cloudflare script with improved cache control
                 if (typeof window.__cfRLUnblockHandlers === 'undefined') {
                     const cfScript = document.createElement('script');
                     cfScript.defer = true;
                     cfScript.src = 'https://static.cloudflareinsights.com/beacon.min.js';
-                    // Add cache control headers via attributes
-                    cfScript.setAttribute('data-cf-beacon', '{"token": "your-token", "spa": false, "version": "2023.11.0"}');
+                    // Set cache control for 1 year instead of 1 day
+                    cfScript.setAttribute('data-cf-beacon', '{"spa": false, "version": "2023.11.0", "maxAge": 31536000}');
                     document.body.appendChild(cfScript);
                 }
             }, 1000);
