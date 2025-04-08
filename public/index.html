@@ -15,211 +15,22 @@
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/fonts.css">
     <link rel="stylesheet" href="/static/css/fontawesome.css">
-    <style>
-        :root {
-            --primary-color: #FFFFFF;
-            --secondary-color: #3498DB;
-            --accent-color: #E74C3C;
-            --text-color: #FFFFFF;
-            --light-bg: #000000;
-            --form-bg: #1a1a1a;
-            --button-color: #0b6bae; /* Darker blue for better contrast */
-            --button-hover-color: #085590; /* Even darker for hover state */
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .header {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 0.5rem 1rem;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .header-logo {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-        }
-
-        .header-logo-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .main-content {
-            flex: 1;
-            max-width: 1200px;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1rem;
-            box-sizing: border-box;
-        }
-
-        .company-logo,
-        .slider-container {
-            width: 100%;
-            margin: 0 auto;
-            height: auto;
-        }
-
-        .slider-container {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-shrink: 0;
-        }
-
-        .slide img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .progress-bar {
-            background-color: var(--secondary-color);
-        }
-
-        .footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .footer a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            margin: 0 0.5rem;
-            font-weight: 500;
-            display: inline-block;
-            padding: 0.5rem 0;
-        }
-
-        .footer a:hover {
-            color: var(--secondary-color);
-            font-weight: 700;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                padding: 0.5rem 1rem;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .header-logo-container {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 0.5rem;
-            }
-
-            .main-content > .max-w-\[800px\] {
-                padding-left: 0;
-                max-width: 100%;
-            }
-
-            .main-content .text-xl {
-                font-size: 1rem;
-                line-height: 1.5;
-            }
-
-            .main-content h1.text-xl {
-                font-size: 1.1rem;
-            }
-
-            .main-content .mb-12 {
-                margin-bottom: 2rem;
-            }
-
-            .main-content > div > div[style*="padding-left: 75px"] {
-                padding-left: 0 !important;
-            }
-            .main-content > div > div[style*="background-color: var(--form-bg)"] {
-                padding: 1rem !important;
-            }
-
-            #contactForm {
-            }
-
-            #contactForm label,
-            #contactForm input,
-            #contactForm textarea,
-            #contactForm button {
-                font-size: 0.9rem;
-            }
-            #contactForm textarea {
-                rows: 8;
-            }
-            #contactForm .text-xs {
-                font-size: 0.7rem;
-            }
-
-            .indented-text-block {
-                padding-left: 0 !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header-logo-container {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 0.5rem;
-            }
-            .footer a {
-                margin: 0 0.3rem;
-                padding: 0.4rem 0;
-            }
-        }
-
-        @keyframes carousel {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-0%);
-            }
-        }
-
-        .indented-text-block {
-            padding-left: 5rem;
-        }
-    </style>
+    <style>:root{--primary-color:#FFF;--secondary-color:#3498DB;--accent-color:#E74C3C;--text-color:#FFF;--light-bg:#000;--form-bg:#1a1a1a;--button-color:#0b6bae;--button-hover-color:#085590}body{font-family:'Montserrat',sans-serif;background-color:var(--light-bg);color:var(--text-color);margin:0;min-height:100vh;display:flex;flex-direction:column}.header{background-color:rgba(0,0,0,.8);padding:.5rem 1rem;z-index:1000;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.header-logo{width:60px;height:60px;object-fit:cover}.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.main-content{flex:1;max-width:1200px;width:100%;margin-left:auto;margin-right:auto;padding:1rem;box-sizing:border-box}.company-logo,.slider-container{width:100%;margin:0 auto;height:auto}.slider-container{overflow:hidden;position:relative}.slider{display:flex;transition:transform .5s ease-in-out}.slide{display:flex;justify-content:center;align-items:center;flex-shrink:0}.slide img{max-width:100%;height:auto;display:block}.progress-bar{background-color:var(--secondary-color)}.footer{background-color:rgba(0,0,0,.8);padding:1rem;text-align:center}.footer a{color:var(--secondary-color);text-decoration:none;margin:0 .5rem;font-weight:500;display:inline-block;padding:.5rem 0}.footer a:hover{color:var(--secondary-color);font-weight:700}@media (max-width:768px){.header{padding:.5rem 1rem;flex-direction:column;align-items:center}.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.main-content>.max-w-\[800px\]{padding-left:0;max-width:100%}.main-content .text-xl{font-size:1rem;line-height:1.5}.main-content h1.text-xl{font-size:1.1rem}.main-content .mb-12{margin-bottom:2rem}.main-content>div>div[style*="padding-left: 75px"]{padding-left:0!important}.main-content>div>div[style*="background-color: var(--form-bg)"]{padding:1rem!important}#contactForm label,#contactForm input,#contactForm textarea,#contactForm button{font-size:.9rem}#contactForm textarea{rows:8}#contactForm .text-xs{font-size:.7rem}.indented-text-block{padding-left:0!important}}@media (max-width:480px){.header-logo-container{width:100%;display:flex;justify-content:center;margin-bottom:.5rem}.footer a{margin:0 .3rem;padding:.4rem 0}}@keyframes carousel{0%{transform:translateX(0)}100%{transform:translateX(-0%)}}.indented-text-block{padding-left:5rem}</style>
     <script defer src="https://analytics.scheef.tech/script.js" data-website-id="8c0d7a39-0fec-4c80-a31e-646fdc918622"></script>
+    <!-- Cache control for Cloudflare -->
+    <link rel="preconnect" href="https://static.cloudflareinsights.com">
+    <link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
 </head>
 
 <body>
     <header class="header">
         <div class="header-logo-container">
             <a href="/">
-                <img src="/static/images/logo.png" alt="PHARMA PERFORMANCE Logo"
-                    class="header-logo">
+                <picture>
+                    <source srcset="/static/images/logo.webp" type="image/webp">
+                    <img src="/static/images/logo.png" alt="PHARMA PERFORMANCE Logo"
+                         class="header-logo" width="60" height="60">
+                </picture>
             </a>
         </div>
     </header>
@@ -229,64 +40,88 @@
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_1.jpg" 
-                         srcset="/static/images/mobile/website_karussel_1.jpg 400w,
-                                 /static/images/tablet/website_karussel_1.jpg 800w,
-                                 /static/images/desktop/website_karussel_1.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 1" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_1.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_1.jpg" 
+                             srcset="/static/images/mobile/website_karussel_1.jpg 400w,
+                                     /static/images/tablet/website_karussel_1.jpg 800w,
+                                     /static/images/desktop/website_karussel_1.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 1" class="company-logo"
+                             width="1200" height="675" loading="eager">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_2.jpg" 
-                         srcset="/static/images/mobile/website_karussel_2.jpg 400w,
-                                 /static/images/tablet/website_karussel_2.jpg 800w,
-                                 /static/images/desktop/website_karussel_2.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 2" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_2.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_2.jpg" 
+                             srcset="/static/images/mobile/website_karussel_2.jpg 400w,
+                                     /static/images/tablet/website_karussel_2.jpg 800w,
+                                     /static/images/desktop/website_karussel_2.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 2" class="company-logo"
+                             width="1200" height="675" loading="lazy">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_3.jpg" 
-                         srcset="/static/images/mobile/website_karussel_3.jpg 400w,
-                                 /static/images/tablet/website_karussel_3.jpg 800w,
-                                 /static/images/desktop/website_karussel_3.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 3" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_3.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_3.jpg" 
+                             srcset="/static/images/mobile/website_karussel_3.jpg 400w,
+                                     /static/images/tablet/website_karussel_3.jpg 800w,
+                                     /static/images/desktop/website_karussel_3.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 3" class="company-logo"
+                             width="1200" height="675" loading="lazy">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_4.jpg" 
-                         srcset="/static/images/mobile/website_karussel_4.jpg 400w,
-                                 /static/images/tablet/website_karussel_4.jpg 800w,
-                                 /static/images/desktop/website_karussel_4.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 4" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_4.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_4.jpg" 
+                             srcset="/static/images/mobile/website_karussel_4.jpg 400w,
+                                     /static/images/tablet/website_karussel_4.jpg 800w,
+                                     /static/images/desktop/website_karussel_4.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 4" class="company-logo"
+                             width="1200" height="675" loading="lazy">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_5.jpg" 
-                         srcset="/static/images/mobile/website_karussel_5.jpg 400w,
-                                 /static/images/tablet/website_karussel_5.jpg 800w,
-                                 /static/images/desktop/website_karussel_5.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 5" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_5.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_5.jpg" 
+                             srcset="/static/images/mobile/website_karussel_5.jpg 400w,
+                                     /static/images/tablet/website_karussel_5.jpg 800w,
+                                     /static/images/desktop/website_karussel_5.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 5" class="company-logo"
+                             width="1200" height="675" loading="lazy">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <img src="/static/images/desktop/website_karussel_6.jpg" 
-                         srcset="/static/images/mobile/website_karussel_6.jpg 400w,
-                                 /static/images/tablet/website_karussel_6.jpg 800w,
-                                 /static/images/desktop/website_karussel_6.jpg 1200w"
-                         sizes="(max-width: 400px) 400px,
-                                (max-width: 800px) 800px,
-                                1200px"
-                         alt="Karussell Bild 6" class="company-logo">
+                    <picture>
+                        <source srcset="/static/images/desktop/webp/website_karussel_6.webp" type="image/webp">
+                        <img src="/static/images/desktop/website_karussel_6.jpg" 
+                             srcset="/static/images/mobile/website_karussel_6.jpg 400w,
+                                     /static/images/tablet/website_karussel_6.jpg 800w,
+                                     /static/images/desktop/website_karussel_6.jpg 1200w"
+                             sizes="(max-width: 400px) 400px,
+                                    (max-width: 800px) 800px,
+                                    1200px"
+                             alt="Karussell Bild 6" class="company-logo"
+                             width="1200" height="675" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -368,7 +203,6 @@
         <div class="mt-2 text-sm text-gray-400">&copy; <span id="currentYear"></span> PHARMA PERFORMANCE. Alle Rechte vorbehalten.</div>
     </footer>
 
-    <script src="/static/js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Set current year for copyright
@@ -390,6 +224,29 @@
             }
 
             setInterval(nextSlide, 5000);
+            
+            // Load external scripts with delay for better performance
+            setTimeout(function() {
+                const scriptUrls = [
+                    '/static/js/main.js'
+                ];
+                
+                scriptUrls.forEach(url => {
+                    const script = document.createElement('script');
+                    script.src = url;
+                    document.body.appendChild(script);
+                });
+                
+                // Add Cloudflare script with proper cache control
+                if (typeof window.__cfRLUnblockHandlers === 'undefined') {
+                    const cfScript = document.createElement('script');
+                    cfScript.defer = true;
+                    cfScript.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+                    // Add cache control headers via attributes
+                    cfScript.setAttribute('data-cf-beacon', '{"token": "your-token", "spa": false, "version": "2023.11.0"}');
+                    document.body.appendChild(cfScript);
+                }
+            }, 1000);
         });
     </script>
 </body>
