@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpeg" href="/static/images/favicon.jpeg">
+    <!-- supported by scheef.tech -->
     <title>PHARMA PERFORMANCE | AI in Healthcare Marketing</title>
     <link rel="preload" href="/static/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/static/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -319,11 +320,15 @@
         <a href="/imprint.html">Impressum</a>
         <a href="/privacy.html">Datenschutz</a>
         <a href="https://www.linkedin.com/in/gaby-perfahl" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <div class="mt-2 text-sm text-gray-400">&copy; <span id="currentYear"></span> PHARMA PERFORMANCE. Alle Rechte vorbehalten.</div>
     </footer>
 
     <script src="/static/js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Set current year for copyright
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
             const slider = document.querySelector('.slider');
             const slides = document.querySelectorAll('.slide');
             const numSlides = slides.length;
