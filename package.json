@@ -13,7 +13,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"deploy": "bun run build && wrangler deploy",
-		"cf-typegen": "wrangler types && mv worker-configuration.d.ts src/"
+		"cf-typegen": "wrangler types && mv worker-configuration.d.ts src/",
+		"machine-translate": "inlang machine translate --project project.inlang"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -36,6 +37,8 @@
 		"tailwindcss": "^4.0.0",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.20.0",
-		"vite": "^6.2.5"
+		"vite": "^6.2.5",
+		"@inlang/paraglide-js": "2.0.11",
+		"@inlang/cli": "^3.0.0"
 	}
 }
