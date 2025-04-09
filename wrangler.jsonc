@@ -52,7 +52,6 @@
    * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
    */
   "vars": {
-    "AWS_REGION": "eu-central-1",
     "EMAIL_FROM": "no-reply@scheef.tech",
     "EMAIL_TO": "gaby@perfahl.eu"
   }
