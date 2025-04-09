@@ -18,6 +18,9 @@
 		<a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
 	{/each}
 </div>
-
-<Header {...data.header} />
-{@render children()}
+<div class="">
+	<Header {...data.header} />
+	<main class="mt-8 xl:mt-12">
+		{@render children()}
+	</main>
+</div>

@@ -3,6 +3,7 @@
 		leftImage: string;
 		rightImage: string;
 		htmlText: string;
+		priority?: boolean;
 	};
 </script>
 
@@ -12,7 +13,7 @@
 
 	type Props = HeroItemProps;
 
-	let { leftImage, rightImage, htmlText }: Props = $props();
+	let { leftImage, rightImage, htmlText, priority = undefined }: Props = $props();
 
 	const imageProps: ComponentProps<Image> = {
 		layout: 'constrained',
@@ -22,6 +23,7 @@
 		format: 'avif',
 		alt: '',
 		fit: 'cover',
+		priority,
 		class: 'w-full'
 	};
 </script>
@@ -29,10 +31,18 @@
 <div class="flex w-full max-w-[1200px] flex-col">
 	<div class="flex w-full flex-row">
 		<div class="w-1/2">
-			<Image src={leftImage} {...imageProps} />
+			<Image
+				src={leftImage}
+				{...imageProps}
+				alt="{htmlText.replace(/<[^>]*>/g, '')} | Left Image"
+			/>
 		</div>
 		<div class="w-1/2">
-			<Image src={rightImage} {...imageProps} />
+			<Image
+				src={rightImage}
+				{...imageProps}
+				alt="{htmlText.replace(/<[^>]*>/g, '')} | Right Image"
+			/>
 		</div>
 	</div>
 	<div

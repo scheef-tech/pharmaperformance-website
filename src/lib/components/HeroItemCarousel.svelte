@@ -20,10 +20,12 @@
 	]}
 >
 	<Carousel.Content>
-		{#each items as item}
-			<Carousel.Item><HeroItem {...item} /></Carousel.Item>
+		{#each items as item, i}
+			<Carousel.Item><HeroItem {...item} priority={i === 0 ? true : false} /></Carousel.Item>
 		{/each}
 	</Carousel.Content>
-	<Carousel.Previous />
-	<Carousel.Next />
+	<div class="hidden xl:block">
+		<Carousel.Previous />
+		<Carousel.Next />
+	</div>
 </Carousel.Root>

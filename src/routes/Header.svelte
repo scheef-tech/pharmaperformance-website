@@ -11,6 +11,8 @@
 	import * as Select from '$lib/shadcn/components/ui/select/index.js';
 	import { setLocale, type Locale } from '$lib/paraglide/runtime.js';
 	import { invalidateAll } from '$app/navigation';
+	import { Image, Source } from '@unpic/svelte/base';
+	import { transform } from 'unpic/providers/cloudflare_images';
 
 	type Props = HeaderProps;
 
@@ -20,33 +22,58 @@
 		setLocale(newLocale);
 		invalidateAll();
 	};
+
+	const logoSrc = '/logo.avif';
 </script>
 
-<div class="flex w-full justify-between px-4 py-2">
-	<span></span>
-	<span> LOGO </span>
-	<Select.Root
-		type="single"
-		name="locale"
-		value={locale.current}
-		onValueChange={(newLocale) => {
-			if (newLocale === locale.current) return;
+<div class="sticky flex items-center justify-between bg-black px-4 py-2">
+	<div class="invisible flex-1">
+		<!-- Empty div for flex space balancing -->
+	</div>
 
-			changeLocale(newLocale as Locale);
-		}}
-	>
-		<Select.Trigger class="w-fit">
-			{locale.current.toUpperCase()}
-		</Select.Trigger>
-		<Select.Content>
-			<Select.Group>
-				{#each locale.available as lang}
-					{@const upperCaseLang = lang.toUpperCase()}
-					<Select.Item value={lang} label={upperCaseLang}>{upperCaseLang}</Select.Item>
-				{/each}
-			</Select.Group>
-		</Select.Content>
-	</Select.Root>
+	<picture class="flex-shrink-0">
+		<Source
+			src={logoSrc}
+			media="(max-width: 767px)"
+			layout="constrained"
+			height={50}
+			width={50}
+			priority
+		/>
+		<Image
+			src={logoSrc}
+			alt="Pharmaperformance logo"
+			height={60}
+			width={60}
+			layout="constrained"
+			priority
+		/>
+	</picture>
+
+	<div class="flex flex-1 justify-end">
+		<Select.Root
+			type="single"
+			name="locale"
+			value={locale.current}
+			onValueChange={(newLocale) => {
+				if (newLocale === locale.current) return;
+
+				changeLocale(newLocale as Locale);
+			}}
+		>
+			<Select.Trigger class="w-fit">
+				{locale.current.toUpperCase()}
+			</Select.Trigger>
+			<Select.Content>
+				<Select.Group>
+					{#each locale.available as lang}
+						{@const upperCaseLang = lang.toUpperCase()}
+						<Select.Item value={lang} label={upperCaseLang}>{upperCaseLang}</Select.Item>
+					{/each}
+				</Select.Group>
+			</Select.Content>
+		</Select.Root>
+	</div>
 </div>
 
 <!-- <Button onclick={toggleMode} variant="outline" size="icon">
