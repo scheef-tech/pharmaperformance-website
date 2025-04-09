@@ -36,12 +36,12 @@
 		</div>
 	</div>
 	<div
-		class="flex min-h-[88px] w-full bg-[#201d1e] px-6 py-4 md:min-h-[108px] lg:min-h-[115px] lg:px-22 lg:py-12 xl:min-h-[215px]"
+		class="flex min-h-[88px] w-full bg-[#201d1e] px-6 py-4 md:min-h-[108px] lg:min-h-[192px] lg:px-22 lg:py-12 xl:min-h-[215px]"
 	>
 		<div
-			class="text-foreground font-regular text-xl tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+			class="text-foreground text-xl font-extralight tracking-[2px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
 		>
-			{@html htmlText}
+			{@html htmlText.replace('<strong>', '<strong class="font-bold">')}
 		</div>
 	</div>
 </div>

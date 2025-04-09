@@ -50,6 +50,7 @@
 	"dependencies": {
 		"@lucide/svelte": "^0.487.0",
 		"@unpic/svelte": "^1.0.0",
+		"embla-carousel-autoplay": "^8.6.0",
 		"mode-watcher": "^0.5.1"
 	}
 }
