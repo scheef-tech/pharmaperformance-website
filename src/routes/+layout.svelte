@@ -3,12 +3,18 @@
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { page } from '$app/state';
 	import { ModeWatcher } from 'mode-watcher';
+	import Header from './Header.svelte';
+	import type { LayoutData } from './$types';
+	import type { Snippet } from 'svelte';
 
-	let { children } = $props();
+	type Props = { children: Snippet; data: LayoutData };
+
+	let { children, data }: Props = $props();
 </script>
 
 <ModeWatcher defaultMode="dark" />
 
+<Header {...data.header} />
 {@render children()}
 
 <div style="display:none">
