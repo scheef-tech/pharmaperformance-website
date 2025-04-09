@@ -35,7 +35,7 @@
 			<Image src={rightImage} {...imageProps} />
 		</div>
 	</div>
-	<div class="flex w-full bg-gray-500 px-6 py-4 lg:px-22 lg:py-12">
+	<div class="flex w-full bg-[#201d1e] px-6 py-4 lg:px-22 lg:py-12">
 		<div
 			class="text-foreground font-regular text-xl tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
 		>

@@ -6,7 +6,8 @@
 	const { data }: PageProps = $props();
 </script>
 
-
-<HeroItem {...data.heroItemCarousel[0]} />
+<div class="flex w-full justify-center">
+	<HeroItem {...data.heroItemCarousel[0]} />
+</div>
 
 {m.grassy_seemly_hound_gasp()}
