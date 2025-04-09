@@ -1,5 +1,11 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "example_message": "Guten Tag {username}",
-  "grassy_seemly_hound_gasp": "Dies ist ein Test"
+  "grassy_seemly_hound_gasp": "Dies ist ein Test",
+  "funny_short_husky_jest": "Nehmen Sie die Überholspur<br/> für Ihre <strong>KI-</strong> Implementierung.",
+  "zany_zesty_ocelot_rise": "Turbolader für Ihre <strong>KI</strong> -Implementierung<br/> in nur 9 Monaten.",
+  "sour_mean_bobcat_bake": "Ist Ihr Unternehmen bereit für <strong>den Start</strong> ?",
+  "awful_dark_swan_boil": "Ihre <strong>KI-</strong> Perspektive:<br/> Erledigen Sie mehr. In kürzerer Zeit.",
+  "awake_few_mouse_walk": "Unfairer Vorteil dank <strong>KI</strong> ?<br/> Absolut!",
+  "steep_clear_dove_value": "Mehr <strong>KI</strong> für Ihr Unternehmen?<br/> Mehr Nutzen für Sie!"
 }
