@@ -2,9 +2,12 @@
 	import '../app.css';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { page } from '$app/state';
+	import { ModeWatcher } from 'mode-watcher';
 
 	let { children } = $props();
 </script>
+
+<ModeWatcher defaultMode="dark" />
 
 {@render children()}
 

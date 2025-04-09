@@ -4,6 +4,24 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			// Prevent flash of unstyled content (FOUC) by setting initial mode
+			(function () {
+				const rootEl = document.documentElement;
+				const mode = localStorage.getItem('mode-watcher-mode') || 'dark';
+				const light =
+					mode === 'light' ||
+					(mode === 'system' && window.matchMedia('(prefers-color-scheme: light)').matches);
+
+				if (light) {
+					rootEl.classList.remove('dark');
+				} else {
+					rootEl.classList.add('dark');
+				}
+
+				rootEl.style.colorScheme = light ? 'light' : 'dark';
+			})();
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
