@@ -9,6 +9,7 @@ export default defineConfig({
 			 project: './project.inlang', 
 			outdir: './src/lib/paraglide',
 			 disableAsyncLocalStorage: true, 
+			 
 			 urlPatterns: [
 				{
 					pattern: "/impressum",
