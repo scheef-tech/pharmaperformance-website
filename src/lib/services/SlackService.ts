@@ -16,7 +16,7 @@ export class SlackService {
 			});
 
 			if (!response.ok) {
-				throw new Error(`Failed to send Slack message: ${response.statusText}`);
+				throw new Error(`Failed to send Slack message: ${response.statusText} ${this.webhookUrl}`);
 			}
 		
 	}

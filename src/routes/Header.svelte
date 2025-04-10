@@ -10,9 +10,8 @@
 <script lang="ts">
 	import * as Select from '$lib/shadcn/components/ui/select/index.js';
 	import { setLocale, type Locale } from '$lib/paraglide/runtime.js';
-	import { invalidateAll } from '$app/navigation';
-	import { Image, Source } from '@unpic/svelte/base';
-	import { transform } from 'unpic/providers/cloudflare_images';
+
+	import { Image, Source } from '@unpic/svelte';
 
 	type Props = HeaderProps;
 

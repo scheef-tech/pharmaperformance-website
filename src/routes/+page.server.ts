@@ -29,12 +29,14 @@ export const actions: Actions = {
         });
       }
 
-      const slackSvc = new SlackService(env.SLACK_WEBHOOK_URL)
 
       const { data } = form
     
       
       try {
+
+        const slackSvc = new SlackService(env.SLACK_WEBHOOK_URL)
+
           slackSvc.sendMessage(`
             *New Contact Form Submission*
             *Name:* ${data.firstName} ${data.lastName}

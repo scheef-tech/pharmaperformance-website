@@ -25,5 +25,5 @@
 		{@render children()}
 	</main>
 
-	<Footer />
+	<Footer currentLocale={data.header.locale.current} />
 </div>
