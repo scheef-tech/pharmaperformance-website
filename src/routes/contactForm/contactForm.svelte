@@ -10,6 +10,7 @@
 	import { slide } from 'svelte/transition';
 	import { Button } from '$lib/shadcn/components/ui/button';
 	import * as Card from '$lib/shadcn/components/ui/card/index.js';
+	import { m } from '$lib/paraglide/messages';
 
 	let { data }: { data: { form: SuperValidated<Infer<ContactSchema>> } } = $props();
 
@@ -38,8 +39,8 @@
 <div class="mx-auto max-w-xl">
 	<Card.Root>
 		<Card.Header>
-			<Card.Title>Contact us</Card.Title>
-			<Card.Description>Fill your information below</Card.Description>
+			<Card.Title>{m.only_loved_mongoose_dial()}</Card.Title>
+			<Card.Description>{m.dull_raw_koala_stab()}</Card.Description>
 		</Card.Header>
 		<Card.Content>
 			{#if successScreen}
@@ -47,7 +48,7 @@
 					<div class="flex flex-col items-center justify-center">
 						<Check class="text-primary" size={32} />
 
-						<div class="">Thank you for contacting us. We'll get back to you shortly.</div>
+						<div class="">{m.swift_antsy_slug_bump()}</div>
 					</div>
 					<Button
 						onclick={() => {
@@ -63,7 +64,7 @@
 						<Form.Field {form} name="firstName" class="flex-1">
 							<Form.Control>
 								{#snippet children({ props })}
-									<Form.Label>First Name</Form.Label>
+									<Form.Label>{m.trite_weak_dove_hurl()}</Form.Label>
 									<Input {...props} bind:value={$formData.firstName} />
 								{/snippet}
 							</Form.Control>
@@ -73,7 +74,7 @@
 						<Form.Field {form} name="lastName" class="flex-1">
 							<Form.Control>
 								{#snippet children({ props })}
-									<Form.Label>Last Name</Form.Label>
+									<Form.Label>{m.civil_even_penguin_read()}</Form.Label>
 									<Input {...props} bind:value={$formData.lastName} />
 								{/snippet}
 							</Form.Control>
@@ -84,7 +85,7 @@
 					<Form.Field {form} name="companyName">
 						<Form.Control>
 							{#snippet children({ props })}
-								<Form.Label>Company Name (Optional)</Form.Label>
+								<Form.Label>{m.orange_funny_hawk_dazzle()}</Form.Label>
 								<Input {...props} bind:value={$formData.companyName} />
 							{/snippet}
 						</Form.Control>
@@ -94,7 +95,7 @@
 					<Form.Field {form} name="email">
 						<Form.Control>
 							{#snippet children({ props })}
-								<Form.Label>Email</Form.Label>
+								<Form.Label>{m.mild_spare_florian_cure()}</Form.Label>
 								<Input {...props} type="email" bind:value={$formData.email} />
 							{/snippet}
 						</Form.Control>
@@ -104,7 +105,7 @@
 					<Form.Field {form} name="phoneNumber">
 						<Form.Control>
 							{#snippet children({ props })}
-								<Form.Label>Phone Number (Optional)</Form.Label>
+								<Form.Label>{m.away_home_snail_climb()}</Form.Label>
 								<Input {...props} type="tel" bind:value={$formData.phoneNumber} />
 							{/snippet}
 						</Form.Control>
@@ -114,7 +115,7 @@
 					<Form.Field {form} name="message">
 						<Form.Control>
 							{#snippet children({ props })}
-								<Form.Label>Message</Form.Label>
+								<Form.Label>{m.loud_next_gibbon_fear()}</Form.Label>
 								<Textarea {...props} bind:value={$formData.message} rows={4} />
 							{/snippet}
 						</Form.Control>
@@ -122,7 +123,7 @@
 					</Form.Field>
 
 					<div class="mt-6">
-						<Form.Button>Submit</Form.Button>
+						<Form.Button>{m.tired_solid_moth_sail()}</Form.Button>
 					</div>
 					{#if errorMessage}
 						<div class="text-destructive mt-2">{errorMessage}</div>

@@ -19,8 +19,10 @@
 	let { locale }: Props = $props();
 
 	const changeLocale = (newLocale: Locale) => {
-		setLocale(newLocale);
-		invalidateAll();
+		setLocale(newLocale, {
+			reload: true
+		});
+		// invalidateAll();
 	};
 
 	const logoSrc = '/logo.avif';

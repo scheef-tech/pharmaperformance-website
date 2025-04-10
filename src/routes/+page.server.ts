@@ -6,6 +6,7 @@ import type { Actions, PageServerLoad } from "./$types";
 import { contactSchema } from "./contactForm/contactSchema";
 import { SlackService } from "$lib/services/SlackService";
 import { env } from "$env/dynamic/private";
+import { m } from "$lib/paraglide/messages";
 
 export const load: PageServerLoad = async (e) => {
     const heroItemCarouselProps: HeroItemProps[] = heroItems()
@@ -14,7 +15,8 @@ export const load: PageServerLoad = async (e) => {
 
     return {
         heroItemCarousel: heroItemCarouselProps,
-        contactForm
+        contactForm,
+        rootText: m.neat_drab_mink_strive()
     }
 };
 

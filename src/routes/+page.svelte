@@ -14,7 +14,7 @@
 <div
 	class="text-foreground mx-auto max-w-4xl px-6 text-base font-extralight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
 >
-	{@html m.neat_drab_mink_strive().replace('<strong>', '<strong class="font-bold">')}
+	{@html data.rootText.replace('<strong>', '<strong class="font-bold">')}
 </div>
 
 <ContactForm data={{ form: data.contactForm }} />
