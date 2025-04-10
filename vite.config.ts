@@ -17,7 +17,7 @@ export default defineConfig({
 						['en', "/impressum"],
 						['de', "/impressum"]
 					]
-				}
+				},
 				{
 					pattern: "/privacy-policy",
 					localized: [

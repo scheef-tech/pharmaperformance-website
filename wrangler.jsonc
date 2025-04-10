@@ -55,6 +55,18 @@
 	"vars": {
 		"EMAIL_FROM": "no-reply@scheef.tech",
 		"EMAIL_TO": "gaby@perfahl.eu"
+	},
+
+	"env": {
+		"staging": {
+			"routes": [
+				{
+					"pattern": "staging.pharmaperformance.de",
+					"custom_domain": true,
+					"zone_name": "pharmaperformance.de"
+				}
+			]
+		}
 	}
 	/**
 	 * Note: Use secrets to store sensitive data.
