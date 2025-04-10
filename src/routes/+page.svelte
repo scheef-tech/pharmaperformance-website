@@ -38,7 +38,7 @@
 	/>
 </svelte:head>
 
-<div class="w-full text-center">PHARMA PERFORMANCE {m.witty_weak_gorilla_fade()}</div>
+<div class="w-full text-center">PHARMA PERFORMANCE coming soon</div>
 
 <div class="flex w-full justify-center">
 	<HeroItemCarousel items={data.heroItemCarousel} />
