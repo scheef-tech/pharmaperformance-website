@@ -28,7 +28,7 @@
 	const logoSrc = '/logo.avif';
 </script>
 
-<div class="sticky flex items-center justify-between bg-black px-4 py-2">
+<div class="sticky top-0 z-10 flex items-center justify-between bg-black px-4 py-2">
 	<div class="invisible flex-1">
 		<!-- Empty div for flex space balancing -->
 	</div>
