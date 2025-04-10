@@ -5,7 +5,7 @@
 	import { Check } from '@lucide/svelte';
 	import { contactSchema, type ContactSchema } from './contactSchema';
 	import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
-	import { zodClient } from 'sveltekit-superforms/adapters';
+	import { valibotClient } from 'sveltekit-superforms/adapters';
 
 	import { slide } from 'svelte/transition';
 	import { Button } from '$lib/shadcn/components/ui/button';
@@ -18,7 +18,7 @@
 	let successScreen: boolean = $state(false);
 
 	const form = superForm(data.form, {
-		validators: zodClient(contactSchema),
+		validators: valibotClient(contactSchema),
 		onUpdate({ form }) {
 			if (form.valid) {
 				successScreen = true;

@@ -1,7 +1,7 @@
 import { heroItems } from "$lib";
 import type { HeroItemProps } from "$lib/components/HeroItem.svelte";
 import { fail, superValidate, message } from "sveltekit-superforms";
-import { zod } from "sveltekit-superforms/adapters";
+import { valibot } from "sveltekit-superforms/adapters";
 import type { Actions, PageServerLoad } from "./$types";
 import { contactSchema } from "./contactForm/contactSchema";
 import { SlackService } from "$lib/services/SlackService";
@@ -11,7 +11,7 @@ import { m } from "$lib/paraglide/messages";
 export const load: PageServerLoad = async (e) => {
     const heroItemCarouselProps: HeroItemProps[] = heroItems()
 
-    const contactForm = await superValidate(zod(contactSchema))
+    const contactForm = await superValidate(valibot(contactSchema))
 
     return {
         heroItemCarousel: heroItemCarouselProps,
@@ -22,7 +22,7 @@ export const load: PageServerLoad = async (e) => {
 
 export const actions: Actions = {
     default: async (event) => {
-      const form = await superValidate(event, zod(contactSchema));
+      const form = await superValidate(event, valibot(contactSchema));
       if (!form.valid) {
         return fail(400, {
           form,

@@ -47,13 +47,13 @@
 		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.29.1",
-		"vite": "^6.2.5",
-		"zod": "^3.24.2"
+		"vite": "^6.2.5"
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.487.0",
 		"@unpic/svelte": "^1.0.0",
 		"embla-carousel-autoplay": "^8.6.0",
-		"mode-watcher": "^0.5.1"
+		"mode-watcher": "^0.5.1",
+		"valibot": "^1.0.0"
 	}
 }
