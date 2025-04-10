@@ -37,9 +37,12 @@ jobs:
 
       # Install dependencies using Bun
       - run: bun install
-      - uses: nrwl/nx-set-shas@v4
+      # Replace nx affected with simple bun commands
+      - run: bun run build
+      - run: bun run deploy
+      # - uses: nrwl/nx-set-shas@v4
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: bunx nx-cloud record -- echo Hello World
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
-      - run: bunx nx affected -t deploy
+      # - run: bunx nx affected -t deploy
