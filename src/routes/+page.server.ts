@@ -16,7 +16,6 @@ export const load: PageServerLoad = async (e) => {
     return {
         heroItemCarousel: heroItemCarouselProps,
         contactForm,
-        rootText: m.neat_drab_mink_strive()
     }
 };
 

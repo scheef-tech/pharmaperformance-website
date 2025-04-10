@@ -7,7 +7,7 @@
 	const { data }: PageProps = $props();
 </script>
 
-PHARMA PERFORMANCE Coming soon
+<div class="w-full text-center">PHARMA PERFORMANCE Coming soon</div>
 
 <div class="flex w-full justify-center">
 	<HeroItemCarousel items={data.heroItemCarousel} />
@@ -16,7 +16,7 @@ PHARMA PERFORMANCE Coming soon
 <div
 	class="text-foreground mx-auto max-w-4xl px-6 text-base font-extralight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
 >
-	{@html data.rootText.replace('<strong>', '<strong class="font-bold">')}
+	{@html m.neat_drab_mink_strive().replace('<strong>', '<strong class="font-bold">')}
 </div>
 
 <ContactForm data={{ form: data.contactForm }} />
