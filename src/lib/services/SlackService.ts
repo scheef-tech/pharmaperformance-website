@@ -6,6 +6,9 @@ export class SlackService {
 	}
 
 	async sendMessage(message: string) {
+
+		console.log("Sending slack message")
+		console.log('Fetch', typeof fetch)
 		
 			const response = await fetch(this.webhookUrl, {
 				method: 'POST',
@@ -14,6 +17,8 @@ export class SlackService {
 				},
 				body: JSON.stringify({ text: message })
 			});
+
+console.log('response', response)
 
 			if (!response.ok) {
 				throw new Error(`Failed to send Slack message: ${response.statusText} ${this.webhookUrl}`);

@@ -37,7 +37,7 @@ export const actions: Actions = {
 
         const slackSvc = new SlackService(env.SLACK_WEBHOOK_URL)
 
-          slackSvc.sendMessage(`
+         await  slackSvc.sendMessage(`
             *New Contact Form Submission*
             *Name:* ${data.firstName} ${data.lastName}
             ${data.companyName ? `*Company:* ${data.companyName}` : ''}

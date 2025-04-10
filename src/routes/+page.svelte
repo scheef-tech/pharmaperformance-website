@@ -7,6 +7,8 @@
 	const { data }: PageProps = $props();
 </script>
 
+PHARMA PERFORMANCE Coming soon
+
 <div class="flex w-full justify-center">
 	<HeroItemCarousel items={data.heroItemCarousel} />
 </div>
