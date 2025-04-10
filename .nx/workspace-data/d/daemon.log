@@ -1,0 +1,262 @@
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.897Z - Started listening on: /var/folders/xt/21vz3dk57rn0b1fsyqx6_p200000gn/T/a3f11f70d66c09916b26/d.sock
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.901Z - [WATCHER]: Subscribed to changes within: /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website (native)
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.907Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.908Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.911Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.911Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.911Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.912Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.914Z - Time taken for 'loadSpecifiedNxPlugins' 0.4511670000000123ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:16.959Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.047Z - Time taken for 'Load Nx Plugin: /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/plugins/package-json' 134.07908400000002ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.053Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.053Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.053Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.054Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.054Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.054Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 142. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.055Z - Time taken for 'loadDefaultNxPlugins' 140.74225ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.056Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.056Z - Done responding to the client handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.056Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.056Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.114Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.114Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.114Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.115Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 2. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:17.117Z - Time taken for 'hash changed files from watcher' 1.858000000000004ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.715Z - [WATCHER]: src/routes/+page.svelte was modified
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.715Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.815Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.815Z - [REQUEST]: src/routes/+page.svelte
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.815Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:26.816Z - Time taken for 'hash changed files from watcher' 0.07108300000072632ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.050Z - [WATCHER]: src/routes/+page.svelte was modified
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.050Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.162Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.250Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.250Z - [REQUEST]: src/routes/+page.svelte
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.250Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:27.251Z - Time taken for 'hash changed files from watcher' 0.07920799999919836ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.054Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.055Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.061Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.061Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.061Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.062Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.062Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.062Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 7. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.062Z - Time taken for 'hash changed files from watcher' 5.20245900000009ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.062Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.063Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.063Z - Done responding to the client handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.063Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.063Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.079Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.079Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.079Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.080Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.084Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.084Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.084Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.085Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.085Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.085Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 5. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:28.085Z - Time taken for 'hash changed files from watcher' 4.4210000000002765ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.089Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.090Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.098Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.098Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.099Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.100Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.100Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.100Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 10. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.101Z - Time taken for 'hash changed files from watcher' 7.35308299999997ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.101Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.102Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.103Z - Done responding to the client handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.103Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.104Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.122Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.122Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.123Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.123Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.126Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.127Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.127Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.127Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.127Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.127Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 4. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:29.128Z - Time taken for 'hash changed files from watcher' 3.501709000000119ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.130Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.131Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.138Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.139Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.139Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.140Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.140Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.140Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 9. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.141Z - Time taken for 'hash changed files from watcher' 7.063707999999679ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.141Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.142Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.142Z - Done responding to the client handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.142Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.142Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.161Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.161Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.161Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.162Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.167Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.167Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.167Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.167Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.167Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.168Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 5. Response time: 1.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:33.168Z - Time taken for 'hash changed files from watcher' 4.755167000001165ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:38.073Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.171Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.172Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.178Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.178Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.178Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.179Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.179Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.179Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 7. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.179Z - Time taken for 'hash changed files from watcher' 5.373583000000508ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.179Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.180Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.180Z - Done responding to the client handleContextFileData
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.180Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.180Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.196Z - Established a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.196Z - Established a connection. Number of open connections: 2
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.197Z - Closed a connection. Number of open connections: 1
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.197Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - [REQUEST]: 
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. (0 , minimatch_1.minimatch) is not a function
+TypeError: (0 , minimatch_1.minimatch) is not a function
+    at findMatchingConfigFiles (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:360:39)
+    at createProjectConfigurationsWithPlugins (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:256:37)
+    at retrieveProjectConfigurations (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:47:85)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:160:43)
+    at async getCachedSerializedProjectGraphPromise (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:52:24)
+    at async handleRequestProjectGraph (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:186:16)
+    at async handleMessage (/Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:109:9)
+    at async /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website/node_modules/nx/src/daemon/server/server.js:74:9
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - Done responding to the client null
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 2. Response time: 0.
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:42.199Z - Time taken for 'hash changed files from watcher' 1.7789580000026035ms
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:45.985Z - [WATCHER]: Processing file changes in outputs
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:45.985Z - Closed a connection. Number of open connections: 0
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:45.985Z - [WATCHER]: Stopping the watcher for /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website (sources)
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:45.985Z - [WATCHER]: Stopping the watcher for /Users/nikdivjak/Developer/Projects/pharmaperformance-proper-website (outputs)
+[NX v20.7.2 Daemon Server] - 2025-04-10T08:56:45.985Z - Server stopped because: "NX_VERSION_CHANGED"
