@@ -6,6 +6,7 @@
 	import Header from './Header.svelte';
 	import type { LayoutData } from './$types';
 	import type { Snippet } from 'svelte';
+	import Footer from './Footer.svelte';
 
 	type Props = { children: Snippet; data: LayoutData };
 
@@ -18,9 +19,11 @@
 		<a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
 	{/each}
 </div>
-<div class="">
+<div class="flex min-h-dvh flex-col">
 	<Header {...data.header} />
-	<main class="mt-8 xl:mt-12">
+	<main class="mt-8 flex-grow space-y-8 xl:mt-12 xl:space-y-12">
 		{@render children()}
 	</main>
+
+	<Footer />
 </div>

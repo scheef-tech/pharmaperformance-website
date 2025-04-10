@@ -14,7 +14,7 @@
 	let { data }: { data: { form: SuperValidated<Infer<ContactSchema>> } } = $props();
 
 	let errorMessage: string | undefined = $state(undefined);
-	let successScreen: boolean = $state(true);
+	let successScreen: boolean = $state(false);
 
 	const form = superForm(data.form, {
 		validators: zodClient(contactSchema),
@@ -43,11 +43,10 @@
 		</Card.Header>
 		<Card.Content>
 			{#if successScreen}
-				<div transition:slide class="flex items-center">
-					<div class="flex items-center justify-center space-y-5 self-stretch">
-						<div class="aspect-square p-4">
-							<Check class="text-primary h-8 w-8" />
-						</div>
+				<div transition:slide class="flex flex-col items-center space-y-4">
+					<div class="flex flex-col items-center justify-center">
+						<Check class="text-primary" size={32} />
+
 						<div class="">Thank you for contacting us. We'll get back to you shortly.</div>
 					</div>
 					<Button
