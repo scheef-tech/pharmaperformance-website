@@ -24,6 +24,7 @@
 		alt: '',
 		fit: 'cover',
 		priority,
+		sizes: '(min-width: 1200px) 600px, (min-width: 960px) 480px, (min-width: 640px) 320px, 160px',
 		class: 'w-full'
 	};
 </script>
