@@ -33,24 +33,26 @@
 		<!-- Empty div for flex space balancing -->
 	</div>
 
-	<picture class="flex-shrink-0">
-		<Source
-			src={logoSrc}
-			media="(max-width: 767px)"
-			layout="constrained"
-			height={50}
-			width={50}
-			priority
-		/>
-		<Image
-			src={logoSrc}
-			alt="Pharmaperformance logo"
-			height={60}
-			width={60}
-			layout="constrained"
-			priority
-		/>
-	</picture>
+	<a href="/" class="flex-shrink-0">
+		<picture>
+			<Source
+				src={logoSrc}
+				media="(max-width: 767px)"
+				layout="constrained"
+				height={50}
+				width={50}
+				priority
+			/>
+			<Image
+				src={logoSrc}
+				alt="Pharmaperformance logo"
+				height={60}
+				width={60}
+				layout="constrained"
+				priority
+			/>
+		</picture>
+	</a>
 
 	<div class="flex flex-1 justify-end">
 		<Select.Root

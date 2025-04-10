@@ -14,7 +14,8 @@
 		"lint": "prettier --check . && eslint .",
 		"deploy": "bun run build && wrangler deploy",
 		"cf-typegen": "wrangler types && mv worker-configuration.d.ts src/",
-		"machine-translate": "inlang machine translate --project project.inlang"
+		"machine-translate": "inlang machine translate --project project.inlang",
+		"translate": "bun run script/translate.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.8",
@@ -29,6 +30,7 @@
 		"@tailwindcss/vite": "^4.1.3",
 		"bits-ui": "^1.3.19",
 		"clsx": "^2.1.1",
+		"deepl-node": "^1.17.3",
 		"embla-carousel-svelte": "^8.6.0",
 		"eslint": "^9.24.0",
 		"eslint-config-prettier": "^10.1.2",
