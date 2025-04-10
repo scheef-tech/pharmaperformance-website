@@ -12,5 +12,5 @@ export const contactSchema = v.object({
     message: v.pipe(v.string(), v.nonEmpty(m.petty_orange_frog_offer())),
 })
 
-export type ContactSchema = v.InferInput<typeof contactSchema>
+export type ContactSchema = typeof contactSchema
 
