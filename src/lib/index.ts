@@ -14,7 +14,7 @@ export const heroItems: () => HeroItemProps[] = () => [
     },
     {
       leftImage: "https://imagedelivery.net/coO5-ODUTOt3Xy0qRkHGhQ/a19c3274-81fc-4193-cab0-beaeb828e200",
-      rightImage: "https://imagedelivery.net/coO5-ODUTOt3Xy0qRkHGhQ/e46a87f1-237c-4a78-c340-54d728f67200",
+      rightImage: "https://imagedelivery.net/coO5-ODUTOt3Xy0qRkHGhQ/eb6c4230-3f42-40e7-5e14-adf2b2ca0800",
       htmlText: m.sour_mean_bobcat_bake()
     },
     {
