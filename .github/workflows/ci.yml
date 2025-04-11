@@ -46,7 +46,10 @@ jobs:
         
       - name: Deploy to staging
         if: github.ref == 'refs/heads/staging'
-        run: bun run build && wrangler deploy --env staging
+        run: |
+          bun install -g wrangler
+          bun run build
+          wrangler deploy --env staging
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: bunx nx-cloud record -- echo Hello World
