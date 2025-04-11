@@ -38,10 +38,12 @@
 
 <div class="mx-auto max-w-xl">
 	<Card.Root>
-		<Card.Header>
-			<Card.Title>{m.only_loved_mongoose_dial()}</Card.Title>
-			<Card.Description>{m.dull_raw_koala_stab()}</Card.Description>
-		</Card.Header>
+		{#if !successScreen}
+			<Card.Header>
+				<Card.Title>{m.only_loved_mongoose_dial()}</Card.Title>
+				<Card.Description>{m.dull_raw_koala_stab()}</Card.Description>
+			</Card.Header>
+		{/if}
 		<Card.Content>
 			{#if successScreen}
 				<div transition:slide class="flex flex-col items-center space-y-4">
