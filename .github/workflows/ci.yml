@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - staging
   pull_request:
 
 permissions:
@@ -37,10 +38,15 @@ jobs:
 
       # Install dependencies using Bun
       - run: bun install
-      # Replace nx affected with simple bun commands
-      - run: bun run build
-      - run: bun run deploy
-      # - uses: nrwl/nx-set-shas@v4
+      
+      # Deploy based on branch
+      - name: Deploy to production
+        if: github.ref == 'refs/heads/main'
+        run: bun run deploy
+        
+      - name: Deploy to staging
+        if: github.ref == 'refs/heads/staging'
+        run: bun run build && wrangler deploy --env staging
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: bunx nx-cloud record -- echo Hello World
