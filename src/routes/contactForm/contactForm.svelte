@@ -39,8 +39,9 @@
 <div class="mx-auto max-w-xl">
 	<Card.Root>
 		{#if !successScreen}
+			<h1 class="sr-only">{m.only_loved_mongoose_dial()}</h1>
 			<Card.Header>
-				<Card.Title>{m.only_loved_mongoose_dial()}</Card.Title>
+				<Card.Title level={2}>{m.only_loved_mongoose_dial()}</Card.Title>
 				<Card.Description>{m.dull_raw_koala_stab()}</Card.Description>
 			</Card.Header>
 		{/if}
