@@ -24,11 +24,11 @@
 	<strong> PHARMA PERFORMANCE coming soon! </strong>
 </div>
 
-<div class="flex w-full justify-center">
+<div class="flex w-full justify-center my-8">
 	<HeroItemCarousel items={data.heroItemCarousel} />
 </div>
 
-<div class="flex w-full justify-center">
+<div class="flex w-full justify-center my-8">
 	<a
 		href="https://outlook.office.com/bookwithme/user/266acf8acc04433dbf52ef08d9de1e0b@pharmaperformance.de?anonymous&ep=plink"
 		target="_blank"

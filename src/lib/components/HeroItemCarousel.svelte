@@ -21,7 +21,7 @@
 >
 	<Carousel.Content>
 		{#each items as item, i}
-			<Carousel.Item><HeroItem {...item} priority={i === 0 ? true : false} /></Carousel.Item>
+			<Carousel.Item class="flex items-center"><HeroItem {...item} priority={i === 0 ? true : false} /></Carousel.Item>
 		{/each}
 	</Carousel.Content>
 	<div class="hidden xl:block">
