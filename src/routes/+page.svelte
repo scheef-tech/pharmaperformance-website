@@ -35,7 +35,7 @@
 		rel="noopener noreferrer"
 		class="rounded-md bg-white px-6 py-3 text-lg font-semibold text-black shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border hover:border-white focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
 	>
-	{m.known_proud_reindeer_pout()}
+	Book a meeting
 	</a>
 </div>
 
