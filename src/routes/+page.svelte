@@ -28,6 +28,17 @@
 	<HeroItemCarousel items={data.heroItemCarousel} />
 </div>
 
+<div class="flex w-full justify-center">
+	<a
+		href="https://outlook.office.com/bookwithme/user/266acf8acc04433dbf52ef08d9de1e0b@pharmaperformance.de?anonymous&ep=plink"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="rounded-md bg-white px-6 py-3 text-lg font-semibold text-black shadow-md transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:border hover:border-white focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
+	>
+	{m.known_proud_reindeer_pout()}
+	</a>
+</div>
+
 <div
 	class="text-foreground mx-auto max-w-4xl px-6 text-base font-extralight sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
 >
@@ -35,5 +46,3 @@
 </div>
 
 <ContactForm data={{ form: data.contactForm }} />
-
-<!-- {m.grassy_seemly_hound_gasp()} -->
