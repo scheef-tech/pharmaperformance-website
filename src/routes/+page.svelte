@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HeroItemCarousel from '$lib/components/HeroItemCarousel.svelte';
+	import CertificateStickers from '$lib/components/CertificateStickers.svelte';
 	import { m } from '$lib/paraglide/messages';
 	import type { PageProps } from './$types';
 	import ContactForm from './contactForm/contactForm.svelte';
@@ -49,6 +50,8 @@
 >
 	{@html m.neat_drab_mink_strive().replace('<strong>', '<strong class="font-bold">')}
 </div>
+
+<CertificateStickers />
 
 <ContactForm data={{ form: data.contactForm }} />
 
