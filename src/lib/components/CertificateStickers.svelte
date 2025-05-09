@@ -16,7 +16,7 @@
 				<Image 
 					src={src} 
 					alt="Quality Certificate" 
-					class="max-w-full max-h-full object-contain transition-all duration-300 hover:scale-105"
+					class="max-w-full max-h-full object-contain transition-all duration-300 scale-90 hover:scale-100"
 					width="120"
 					height="120"
 				/>
